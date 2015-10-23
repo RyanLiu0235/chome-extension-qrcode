@@ -1,0 +1,20 @@
+{
+    "name": "browser action demo",
+    "version": "1.0",
+    "permissions": [
+        "tabs", "http://*/*", "https://*/*"
+    ],
+    "browser_action": {
+        "default_title": "这是一个demo，获取当前页面url",
+        "default_icon": "rainbow.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["qrcode.js", "background.js"]
+    },
+    "content_scripts":[{
+        "matches":["http://www.cnblogs.com/*"],
+        "js":["jquery-2.0.2.min.js", "content_script.js"]
+    }],
+    "manifest_version": 2
+}

@@ -1,0 +1,18 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	width: 240px;
+	padding: 15px;
+}
+.text {
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	word-wrap: break-word;
+}
+.code {
+	width: 210px;
+	margin: 20px auto 0;
+}
